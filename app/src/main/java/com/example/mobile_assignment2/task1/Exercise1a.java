@@ -3,6 +3,7 @@ package com.example.mobile_assignment2.task1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 
 import androidx.activity.EdgeToEdge;
@@ -17,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mobile_assignment2.R;
 import com.example.mobile_assignment2.task1.task1a.Fruit;
 import com.example.mobile_assignment2.task1.task1a.Task1aCVAdapter;
+import com.example.mobile_assignment2.task1.task1a.Task1a_AddNewFruit;
 import com.example.mobile_assignment2.task1.task1a.Task1a_FruitUpdate;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -31,6 +33,7 @@ public class Exercise1a extends AppCompatActivity {
 
     RecyclerView rvFruit;
     ProgressBar pbLoadingFruitRV;
+    Button btnAddFruit;
 
     FirebaseFirestore db;
     List<Fruit> fruitList;
@@ -48,6 +51,7 @@ public class Exercise1a extends AppCompatActivity {
 
         rvFruit = findViewById(R.id.rvFruit);
         pbLoadingFruitRV = findViewById(R.id.pbLoadingFruitRV);
+        btnAddFruit = findViewById(R.id.btnAddNewFruit);
 
         fruitList = new ArrayList<Fruit>();
         Task1aCVAdapter adapter = new Task1aCVAdapter(fruitList);
@@ -71,6 +75,15 @@ public class Exercise1a extends AppCompatActivity {
 
         rvFruit.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
         rvFruit.setAdapter(adapter);
+
+
+        btnAddFruit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Task1a_AddNewFruit.class);
+
+            }
+        });
 
     }
 

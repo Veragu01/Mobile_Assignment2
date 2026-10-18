@@ -33,6 +33,10 @@
             android:name=".task1.task1a.Task1a_FruitUpdate"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".task1.task1a.Task1a_AddNewFruit"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
