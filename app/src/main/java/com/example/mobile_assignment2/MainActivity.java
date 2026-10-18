@@ -1,6 +1,9 @@
 package com.example.mobile_assignment2;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +11,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.mobile_assignment2.task1.Exercise1a;
+
 public class MainActivity extends AppCompatActivity {
+
+    Button btnOpenTask1a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +26,16 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        btnOpenTask1a = findViewById(R.id.btnTask1a);
+
+        btnOpenTask1a.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Exercise1a.class);
+                startActivity(intent);
+            }
         });
     }
 }
