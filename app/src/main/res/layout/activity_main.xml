@@ -13,40 +13,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ISCG7424 Assignment 2"
+        android:text="ISCG7424 Assignment 2 - Exercise 1"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ulysses Veragos - 1452622"
         />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
-        <Button
-            android:id="@+id/btnTask1a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80sp"
-            android:layout_marginRight="20sp"
-            android:text="Task 1a"
-            />
-        <Button
-            android:id="@+id/btnTask1b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80sp"
-            android:text="Task 1b"
-            />
-    </LinearLayout>
     <Button
-        android:id="@+id/btnTask2"
+        android:id="@+id/btnTask1a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
-        android:text="Task 2"
+        android:layout_marginTop="80sp"
+        android:text="Task 1a"
         />
+    <Button
+        android:id="@+id/btnTask1b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80sp"
+        android:text="Task 1b"
+        />
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"

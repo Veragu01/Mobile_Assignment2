@@ -14,9 +14,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fruit Ratings"
-        android:layout_marginTop="30sp"
+        android:layout_margin="20sp"
         android:textSize="24sp"
         android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/btnAddNewFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Fruit"
+        android:layout_marginBottom="16sp"
         />
     <ProgressBar
         android:id="@+id/pbLoadingFruitRV"
@@ -29,18 +36,8 @@
         android:layout_height="wrap_content"
         android:visibility="invisible"
         />
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        />
-    <Button
-        android:id="@+id/btnAddNewFruit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add New Fruit"
-        android:layout_marginBottom="30sp"
-        />
+
+
 
 
 

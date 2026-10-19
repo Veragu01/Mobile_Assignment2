@@ -81,7 +81,8 @@ public class Exercise1a extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), Task1a_AddNewFruit.class);
-
+                startActivity(intent);
+                finish();
             }
         });
 

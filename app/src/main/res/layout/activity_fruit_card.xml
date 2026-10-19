@@ -76,6 +76,7 @@
                     android:numStars="5"
                     android:rating="3"
                     android:progressTint="@color/Yellow"
+                    android:isIndicator="true"
                     />
 
             </LinearLayout>

@@ -79,9 +79,9 @@ public class Task1a_AddNewFruit extends AppCompatActivity {
                     Map<String, Object> newFruit = new HashMap<>();
                     newFruit.put("name", txtFruitName.getText().toString().trim());
                     newFruit.put("type",txtFruitType.getText().toString().trim());
-                    newFruit.put("quantity", txtFruitQuantity);
+                    newFruit.put("quantity", Integer.parseInt(txtFruitQuantity.getText().toString()));
                     newFruit.put("rating", rbNewFruitRating.getRating());
-                    db.collection("users").document().set(newFruit).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    db.collection("Fruit").document().set(newFruit).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()){

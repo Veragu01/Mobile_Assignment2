@@ -89,7 +89,7 @@ public class Task1a_FruitUpdate extends AppCompatActivity {
                     String name = etUpdateName.getText().toString().trim();
                     String type = etUpdateType.getText().toString().trim();
                     int quantity = Integer.parseInt(etUpdateQuantity.getText().toString().trim());
-                    int rating = (int)rbUpdateRating.getRating();
+                    double rating = rbUpdateRating.getRating();
 
                     DocumentReference docRef = db.collection("Fruit").document(fruitID);
                     docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {

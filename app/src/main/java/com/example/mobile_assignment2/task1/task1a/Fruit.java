@@ -6,13 +6,13 @@ public class Fruit {
     private String name;
     private String type;
     private int quantity;
-    private int rating;
+    private float rating;
 
-    public Fruit(String name, String type, int quantity, int rating) {
+    public Fruit(String name, String type, int quantity, double rating) {
         this.name = name;
         this.type = type;
         this.quantity = quantity;
-        this.rating = rating;
+        this.rating = (float)rating;
     }
 
     public Fruit() {
@@ -39,7 +39,7 @@ public class Fruit {
         return quantity;
     }
 
-    public int getRating() {
+    public float getRating() {
         return rating;
     }
 }
